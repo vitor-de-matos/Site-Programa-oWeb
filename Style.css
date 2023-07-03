@@ -9,10 +9,19 @@
 
 .navbar {
     background-color: #0f130b;
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar input {
+    position: absolute;
+    right: 16rem;
 }
 
 .navbar div {
@@ -29,7 +38,8 @@
 .navbar input {
     border-radius: 3px;
     border: none;
-    padding: 5px;
+    font-size: large;
+    padding: 8px;
     margin-right: -10.5rem;
 }
 
@@ -39,36 +49,346 @@
     font-size: 2.5rem;
 }
 
-/*Body*/
-
-.corpo h1{
+.corpo h1 {
     display: flex;
     justify-content: center;
     color: #212121;
 }
 
-.pe{
+.pe {
     background-color: #0f130b;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-   justify-content:space-between ;
+    justify-content: space-around;
     height: 100px;
 }
 
-.pe a{
+.pe a {
     color: white;
     text-decoration: none;
     font-size: 24px;
-    
+
 
 }
 
-.ImgFooter{
+.ImgFooter {
     margin-left: 2em;
 }
 
-.servicos{
+.servicos {
     margin-right: 10px;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    background-color: #212121;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+    border: white;
+    border-radius: 10px;
+
+}
+
+.redes-sociais a {
+    text-decoration: none;
+
+}
+
+.telefone {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.telefone p {
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.instagram {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.instagram img {
+    width: 32px;
+    height: 32px;
+}
+
+.instagram a {
+    color: #bc1888;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.facebook {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.facebook img {
+    width: 32px;
+    height: 32px;
+}
+
+.facebook a {
+    color: blue;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.redes-sociais h1 {
+    color: white;
+    padding-bottom: 25px;
+}
+
+.logar {
+    background-color: #161616;
+    align-items: center;
+    background-size: cover;
+    width: 450px;
+    height: 450px;
+}
+
+.tudo {
+    background: url(Imagens/logo.png);
+    background-size: 10vw 14vh;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logar {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: rgba(22, 22, 22, 0.95);
+}
+
+.logar p {
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    user-select: none;
+    z-index: 5;
+
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 5;
+    margin-bottom: 30px;
+}
+
+.login {
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login h1 {
+    font-size: 50px;
+    margin-top: 65px;
+    margin-bottom: 25px;
+}
+
+.login input {
+    background-color: whitesmoke;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.login button {
+    font-size: 20px;
+    padding: 6px;
+    border-radius: 5px;
+    width: 11.5rem;
+}
+
+.conteudo1 {
+    display: flex;
+    padding: 10px;
+}
+
+.texto_conteudo1 p {
+    font-size: 24px;
+    text-align: justify;
+    margin: 10px;
+}
+
+.conteudo2 {
+    display: flex;
+    padding: 10px;
+}
+
+.conteudo2 img {
+    height: 468px;
+    width: 315px;
+
+}
+
+.texto_conteudo2 {
+    font-size: 24px;
+    text-align: justify;
+    margin: 10px;
+    width: 50%;
+}
+
+.imagens {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.interior2 {
+    margin-left: 20px;
+}
+
+.entrar button {
+    cursor: pointer;
+}
+
+.pagina_em_desenvolvimento {
+    background: url(Imagens/em_obras.jpg);
+    background-size: contain;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+
+}
+
+.Texto_macaquinho {
+    text-align: justify;
+    font-size: large;
+}
+
+.Texto_macaquinho h1 {
+    margin-top: 3rem;
+    font-size: 30px;
+    margin-left: 2rem;
+}
+
+.Texto_macaquinho p {
+    margin-top: 25px;
+}
+
+.Texto_macaquinho a {
+    display: flex;
+    justify-content: center;
+    margin-left: 6rem;
+    margin-top: 35px;
+    width: 12rem;
+    padding: 12px;
+    font-size: large;
+    background-color: bisque;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.Texto_macaquinho a:hover {
+    background-color: rgb(248, 211, 165);
+}
+
+.sobre {
+    padding: 80px;
+}
+
+.sobre h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.sobre p {
+    text-align: justify;
+    font-size: 24px;
+    padding: 4px;
+}
+
+.conteudo_macaquinho {
+    display: flex;
+    position: absolute;
+    width: 25rem;
+    height: 100vh;
+    right: 2%;
+}
+
+.servico {
+    background: url(Imagens/estande.jpg);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.servico_texto {
+    align-items: center;
+    padding: 4rem;
+    margin-top: 12rem;
+    margin-bottom: 8rem;
+    height: 25rem;
+    border-radius: 2rem;
+    text-align: justify;
+    line-height: 2rem;
+    width: 40%;
+    background-color: rgba(33, 33, 33, 0.95);
+    color: white;
+}
+
+.servico_texto h1 {
+    font-size: 0.5;
+}
+
+.servico_texto p {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.servico_img {
+    border-color: #bc1888;
+    border: 10px;
+    border-radius: 10px;
+    margin-top: 5rem;
+}
+
+.servico_img img {
+    width: 33rem;
+}
+
+.javali {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.javali img {
+    width: 20%;
 }
